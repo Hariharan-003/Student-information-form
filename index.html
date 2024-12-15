@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="heading">Student Profile Form</h1>
+
+    <div class="form-container">
+        <table>
+            <tr>
+                <th>Name</th>
+                <td><input type="text" id="nameInput" placeholder="Enter Name"></td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td><input type="number" id="ageInput" placeholder="Enter Age"></td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>
+                    <input type="radio" name="Gender" value="Male"> Male
+                    <input type="radio" name="Gender" value="Female"> Female
+                </td>
+            </tr>
+            <tr>
+                <th>Course</th>
+                <td>
+                    <select id="courseSelect">
+                        <option>JavaScript</option>
+                        <option>Python</option>
+                        <option>Java</option>
+                        <option>React</option>
+                        <option>Angular</option>
+                        <option>C++</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><input type="email" id="emailInput" placeholder="Enter Email"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button class="savebtn">Save</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="data-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Course</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="studentData"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
